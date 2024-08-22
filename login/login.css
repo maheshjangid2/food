@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 695px;
+    background-color: #fff;
+    display: flex;
+}
+.container img{
+    width: 819px;
+    height: auto;
+}
+.login-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 47%;
+    position: relative;
+}
+.login-detail img{
+    width: 100px;
+    height: 70px;
+   margin: 50px 0;
+}
+.login-detail h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: -30px;
+}
+.login-detail input{
+    width: 490px;
+    height: 64px;
+    border: 2px solid gray;
+    outline: none;
+    padding-left:25px ;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.login-detail button{
+    width: 475px;
+    height: 63px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.login-detail #btn1{
+    color: black;
+    background-color: #CC9933;
+    margin-top: 10px;
+}
+.login-detail span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+.login-detail span hr{
+    width: 200px;
+}
+.login-detail #btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285F4;
+    color: #fff;
+}
+.login-detail #btn2 img{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px
+}
+@media (min-width:320px ) and (max-width:480px ){
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.container img{
+    width: auto;
+    height: 300px;
+}
+.login-detail{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+.login-detail img{
+    height: 80px;
+    width: 130px;
+    margin: 30px 0;
+}
+.login-detail h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.login-detail input{
+    width: 250px;
+    height: 40px;
+}
+.login-detail button{
+    width: 250px;
+    height: 40px;
+}
+.login-detail #btn1{
+    font-size: 15px;
+}
+.login-detail #btn2{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.login-detail #btn2 img{
+    width: 18px;
+    height: 18px;
+}
+.login-detail span hr{
+    width: 100px;
+}
+.login-detail span{
+    margin: 20px 0;
+}
+}

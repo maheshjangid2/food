@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.main-container{
+    background-image: url("assets/chicken.png");
+    background-position: contain;
+     width: 100%;
+    height: 610px; 
+    background-size: cover;
+   position: relative;
+   
+}
+
+
+.main-container  .navbar img{
+    margin-left: 100px;
+    width: 108px;
+    height: 72px;
+}
+@media (min-width:320px ) and (max-width:580px ) {
+    .main-container{
+        background-image: url("assets/chicken.png");
+        width: auto;
+        background-size: cover;
+        height: 380px;
+        
+    }
+    .main-container .navbar .right {
+        width: 130px;
+        display: flex;
+    }
+    .main-container  .navbar img{
+        width: 75px;
+        height: 50px;
+        margin-left: 60px;
+    }
+     .main-container .navbar .right li{
+        display: none;
+     }
+     .main-container .navbar .cart{
+     font-size: 15px;
+     padding: 2px 5px;   
+     display: block;
+    }
+    
+
+}
+
+
+
+.main-container .navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(59, 56, 56, 0.4);
+height: 120px;
+
+}
+.main-container .navbar  .right{
+    display: flex;
+    align-items: center; 
+    margin-right: 40px;
+}
+
+.main-container .navbar  .right li{
+    list-style: none;
+}
+.main-container .navbar  .right li a{
+    margin-right: 70px;
+    color: white;
+    text-decoration: none;
+  
+}
+.main-container .navbar  .right li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.main-container .navbar  .cart{
+    gap: 3px;
+    background-color: orange;
+    padding: 7px 20px;
+    cursor: pointer;
+    
+}
+.main-container .navbar  .cart:hover{
+    font-size :20px ;
+}
+
+
+/*-------------------------------------------------------------cart------------------------------------------*/
+
+.carts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 900px;
+}
+.carts-container{
+   
+    width: 1340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: -300px;
+    position: absolute;
+    background-color: #FFF;
+  
+}
+.carts-container h1{
+    margin-top: 70px;
+    font-size: 60px;
+    font-weight: 800;
+}
+.carts-details{
+    display: flex;
+    flex-direction: column;
+    width: 1040px;
+    align-items: center;
+    gap: 4px;
+}
+.carts-details .burger1{
+    width: 1040px;
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+.carts-details .burger1  img{
+    width: 329px;
+    height: 210px;
+    background-size: cover;
+   
+}
+
+
+
+@media (min-width:320px ) and (max-width:580px ){
+    .carts{
+        height: 1700px;
+    }
+    .carts-container{
+        width: 360px;
+        margin-top: -100px;
+        height: auto;
+    }
+    .carts-container h1{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .carts-details{
+        width: 400px;
+        gap: 10px;
+    }
+    .carts-details .burger1{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+        align-items: center;
+    }
+    .carts-details .burger1 img{
+        width: 280px;
+        height: 200px;
+        margin-top: 20px;
+    }
+  .carts-details .burger1 .cart-update .upper{
+   width: 250px;
+  }
+ .cart-update {
+width: 250px;
+gap: 20px;
+  }
+    .cart-update .upper h2{
+     font-size: 20px;
+
+    }
+    .carts-details .burger1  h4{
+        
+        align-items: center;
+        margin-left: 80px;
+    }
+}
+
+
+
+.carts-details .burger1 .cart-update{
+    display: flex;
+    gap: 30px;
+   flex-direction: column;
+
+  
+}
+ .cart-update .upper{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+
+ }
+ .upper h2{
+    font-size: 25px;
+    font-weight: 750;
+ }
+ .upper h3{
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+ }
+ .upper span{
+    color: rgb(227, 151, 8);
+    font-weight: 550;
+    cursor: pointer;
+ }
+
+.cart-update .button{
+    width: 150px;
+    background-color: #FFF;
+    border: 2.4px solid black;
+    padding: 5px 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(227, 151, 8);
+}
+
+.cart-update .button button{
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #FFF;
+    color: rgb(227, 151, 8);
+
+    
+}
+.burger1 h4{
+    margin-right: 100px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.total{
+    width: 1037px;
+    height: 73px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 550px ;
+}
+.total h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: Montserrat;
+    initial-letter: 4.5%;
+}
+.total h4{
+    font-size: 25px;
+
+}
+.checkout{
+    width: 413px;
+    height: 61px;
+    background-color: rgb(208, 138, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 90px;
+   border-radius: 5px;
+}
+.checkout a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------footer------------------------------------------*/
+
+.footer{
+    width: 100%;
+    height: 410px;
+    background-color: black;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.for-container1{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.footer-container1 img{
+    width: 108px;
+    height: 70px;
+}
+ .footer-container2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+/*----first*/
+.footer-container2 .first{
+    width: 300px;
+}
+.footer-container2 .first h2{
+    font-size: 20px;
+}
+.footer-container2 .first  p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+/* ------second----*/
+
+.footer-container2 .sec h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+}
+.footer-container2 .sec h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-container2 .sec h3 a{
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 7px;
+}
+
+/*------third-------*/
+.footer-container2 .third h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-container2 .third h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-container2 .third span{
+    font-size: 13px;
+    color: orange;
+    font-weight: 0;
+
+}
+.footer-container2 ul {
+    width: 250px;
+}
+
+.footer-container2 ul h2{
+   font-size: 20px;
+   margin-bottom: 20px;
+   font-weight: 0;
+}
+.footer-container2 ul li{
+    font-size: 13px;
+    list-style: none;
+   margin-top: 13px;
+   display: flex;
+}
+.footer-container2 ul li i{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+@media (min-width:320px ) and (max-width:580px ){
+    .footer{
+        height: auto;
+
+    }
+    .footer-container1 img{
+        width: 90px;
+        height: 60px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .footer-container2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------footer second------------------------------*/
+
+
+
+.footer-sec{
+    width: 100%;
+    height: 87px;
+    background: rgb(223, 168, 64);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 450px;
+}
+.footer-sec p{
+  font-size: 19px;
+  font-weight: 600;
+}
+.footer-sec p i{
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.footer-sec .container{
+   font-size: 23px;
+}
+.footer-sec .container i{
+    margin-right: 5px;
+}
+
+@media (min-width:320px ) and (max-width:580px ){
+    .footer-sec{
+        height: 70px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-sec p{
+        font-size: 10px;
+    }
+    .footer-sec .container i{
+        font-size: 16px;
+        margin-right: 2px;
+    }
+}
+
