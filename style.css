@@ -101,11 +101,15 @@ height: 120px;
     margin-top: 30px;
     width: 500px;
     font-size: 20px;
+    margin-bottom: 30px;
 }
-.description h3{
+
+.description h3 a{
+    text-decoration: none;
+    color: black;
     background-color: orange;
     width: 170px;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 8px 20px;
     border-radius: 5px;
 }
@@ -123,7 +127,9 @@ height: 120px;
         margin-top: 10px;
         width: 200px;
     }
-    .description h3{
+    .description  h3 a{
+        text-decoration: none;
+        color: #FFF;
         border-radius: 5px;
         width: 150px;
         padding: 6px 10px;
@@ -171,7 +177,8 @@ height: 120px;
 .about-container h2{
     margin-top: 60px;
 }
-.about-container h3{
+.about-container   h3{
+    text-decoration: none;
     font-size: large;
     color: orange;
 }

@@ -115,6 +115,8 @@ height: 120px;
     margin-top: 80px;
 }
 .menu .men h3{
+    text-decoration: none;
+    color: #FFF;
     font-size: 25px;
     margin-top: 35px;
 }
