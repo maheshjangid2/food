@@ -20,7 +20,7 @@
     height: 72px;
 }
 
-@media (min-width:320px ) and (max-width:580px ) {
+@media (min-width:320px ) and (max-width:480px ) {
     .main-container{
         width: 480px;
         height: 700px;
@@ -110,7 +110,7 @@ height: 120px;
     border-radius: 5px;
 }
 
-@media (min-width:320px ) and (max-width:580px ){
+@media (min-width:320px ) and (max-width:480px ){
     .description{
         margin-left: 50px;
         margin-top: 30px;
@@ -176,7 +176,7 @@ height: 120px;
     color: orange;
 }
 
-@media (min-width:320px ) and (max-width:580px ){
+@media (min-width:320px ) and (max-width:480px ){
     .about-us{
         width: 100%;
         height: 350px;
@@ -228,7 +228,7 @@ height: 120px;
     padding: 13px 30px;
 }
 
-@media (min-width:320px ) and (max-width:580px ){
+@media (min-width:320px ) and (max-width:480px ){
     .delivery{
         height: 500px;
     }
@@ -286,7 +286,7 @@ height: 120px;
     height: auto;
 
 }
-@media (min-width:320px ) and (max-width:580px ){
+@media (min-width:320px ) and (max-width:480px ){
     .for-container{
         display: flex;
         flex-direction: column;
@@ -356,7 +356,7 @@ gap: 100px;
     
 }
 
-@media (min-width:320px ) and (max-width:580px ){
+@media (min-width:320px ) and (max-width:480px ){
     .serve{
         height: 300px;
     }
