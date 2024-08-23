@@ -11,11 +11,10 @@ body,html{
 
 .main-container{
     background-image: url("assets/image1tortila.png");
-    background-position: contain;
-     width: 100%;
-    height: 120vh; 
     background-size: cover;
-   position: relative;
+    height: 1050px;
+     width: 100%;
+    
 }
 .main-container  .navbar img{
     margin-left: 100px;
@@ -23,17 +22,21 @@ body,html{
     height: 72px;
 }
 
-@media  (max-width:580px ) {
+@media  (max-width:480px ) {
     .main-container{
-        width: 580px;
-        height: 700px;
+        width: auto;
+        height: 510px;
         
+        background-size: cover;
     }
     .main-container  .navbar img{
        
         width: 75px;
         height: 50px;
         margin-left: 60px;
+    }
+    .main-container .navbar .right{
+        display: flex;
     }
      .main-container .navbar .right li{
         display: none;
@@ -49,7 +52,7 @@ body,html{
     
 
 }
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:575px) {
         body,html{
             overflow-x: hidden;
         }
@@ -157,7 +160,7 @@ height: 120px;
      
 }
 .about-container{
-    margin-top: -190px;  
+    margin-top: -250px;  
     width: 1400px;
     height: 1050px;
     position: absolute;
@@ -195,26 +198,31 @@ height: 120px;
 @media  (max-width:580px ){
     .about-us{
         width: 100%;
-        height: 350px;
+        height: 510px;
     }
     .about-container{
-        width: 400px;
-        height: 500px;
-        gap: 30px;
+        width: 320px;
+        height: 550px;
+        gap: 15px;
+        margin-top: -80px;
     }
     .about-container img{
-        width: 350px;
-        height: 300px;
+        width: 290px;
+        height: 270px;
     }
     .about-container p{
         width: 400px;
         height: auto;
         font-size: 10px;
+        inline-size: 290px;
+        padding: 0 30px;
+        margin-bottom: 10px;
     }
     .about-container h2{
         font-size: 20px;
         margin-top: 30px;
     }
+    
 }
 /*Delivery---------------------------------------*/
 .delivery{
@@ -246,7 +254,7 @@ height: 120px;
 
 @media  (max-width:580px ){
     .delivery{
-        height: 500px;
+        height: 700px;
     }
     .delivery-container{
         gap: 20px;
@@ -258,7 +266,7 @@ height: 120px;
     .delivery-container  p{
         font-size: 10px;
         width: 350px;
-        inline-size: 350px;
+        inline-size: 310px;
         text-align: center;
     }
 }
@@ -306,7 +314,7 @@ height: 120px;
     .for-container{
         display: flex;
         flex-direction: column;
-    
+        
     }
     .for-you h2{
         font-size: 30px;
@@ -315,7 +323,7 @@ height: 120px;
     }
     .for-you{
         gap: 20px;
-        height: 800px;
+        height: 980px;
     }
     .for-container .birth{
         gap: 10px;
@@ -323,6 +331,11 @@ height: 120px;
     .for-container img{
         height: 100px;
         width: 100px;
+    }
+    .for-you p{
+        font-size: 15px;
+        text-align: center;
+        inline-size: 250px;
     }
 }
 
@@ -374,27 +387,35 @@ gap: 100px;
 
 @media  (max-width:580px ){
     .serve{
-        height: 300px;
+        height: 440px;
+       
     }
     .serve-container{
-        gap: 50px;
+        gap: 10px;
         padding-top: 70px;
+    
     }
     .serve-container h2{
         font-size: 18px;
+        inline-size: 200px;
+        text-align: center;
     }
     .serve-container .numbers{
         font-size: 30px;
-        gap: 20px;
+        gap: 10px;
         width: 300px;
         justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     .numbers .num h1{
         font-size: 40px;
-        padding: 5px;
+        text-align: center;
+        padding: 0;
     }
     .numbers .num h3{
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 600;
     }
 
@@ -434,22 +455,22 @@ font-weight: 600px;
 
 @media  (max-width:580px ){
     .remember{
-        height: 400px;
-        gap: 20px;
+        height: 460px;
+        gap: 10px;
         margin-top: 50px;
     }
     .remember h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .remember h3 img{
         width: 40px;
         height: 20px;
     }
     .remember .paragraph{
-        width: 400px;
+        width: 300px;
         font-size: 10px;
         gap: 5px;
-        inline-size: 300px;
+        inline-size: 270px;
         text-align: center;
     }
     .remember img{
@@ -517,10 +538,10 @@ color: #FFF;
         gap: 50px;
     }
     .sub-container h2{
-        font-size: 13px;
+        font-size: 12px;
     }
     .sub-container .input input{
-        width: 180px;
+        width: 160px;
         font-size: 12px;
     }
     .sub-container .input button{
@@ -643,7 +664,6 @@ color: #FFF;
 /*-------------------------footer second------------------------------*/
 
 
-
 .footer-sec{
     width: 100%;
     height: 87px;
@@ -653,22 +673,14 @@ color: #FFF;
     justify-content: space-evenly;
     gap: 450px;
 }
-.footer-sec p{
-  font-size: 19px;
-  font-weight: 600;
-}
-.footer-sec p i{
-    margin-left: 5px ;
-    margin-right: 5px ;
-}
-.footer-sec .container{
-   font-size: 23px;
-}
-.footer-sec .container i{
-    margin-right: 5px;
+
+.footer-sec .container2 {
+   font-size: 53px;
+   gap: 20px;
 }
 
-@media  (max-width:580px ){
+
+@media (min-width:320px ) and (max-width:580px ){
     .footer-sec{
         height: 70px;
         gap: 5px;

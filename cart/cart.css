@@ -5,6 +5,9 @@
     box-sizing: border-box;
     
 }
+body,html{
+    overflow-x: hidden;
+}
 
 .main-container{
     background-image: url("assets/chicken.png");
@@ -148,7 +151,7 @@ height: 120px;
 
 @media (min-width:320px ) and (max-width:580px ){
     .carts{
-        height: 1700px;
+        height: 1500px;
     }
     .carts-container{
         width: 360px;
@@ -190,6 +193,26 @@ gap: 20px;
         
         align-items: center;
         margin-left: 80px;
+    }
+    .carts-details .total{
+        width: 300px;
+        height: 40px;
+        gap: 40px;
+    }
+    .carts-details .total h2{
+        font-size: 20px;
+    }
+    .carts-details .total  h4{
+        font-size: 20px;
+    }
+     .carts-details .checkout{
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .carts-details .checkout a{
+        font-size: 15px;
     }
 }
 
@@ -265,7 +288,7 @@ gap: 20px;
     font-size: 30px;
     font-weight: 600;
     font-style: Montserrat;
-    initial-letter: 4.5%;
+  
 }
 .total h4{
     font-size: 25px;

@@ -5,6 +5,9 @@
     box-sizing: border-box;
     
 }
+body,html{
+    overflow-x: hidden;
+}
 
 .main-container  .navbar img{
     margin-left: 100px;
