@@ -24,29 +24,57 @@ body,html{
 
 @media  (max-width:480px ) {
     .main-container{
-        width: auto;
-        height: 510px;
+        width:100%;
+        height: 100%;
         
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
     }
     .main-container  .navbar img{
-       
-        width: 75px;
-        height: 50px;
+       margin-bottom: 10vw;
+        width: 59px;
+        height: 40px;
         margin-left: 60px;
     }
     .main-container .navbar .right{
         display: flex;
+        display: inline;
+        align-items: center;
+        height: 60px;
     }
-     .main-container .navbar .right li{
+    .main-container .navbar  {
+       
+      
+    }
+     .main-container .navbar .right a{
         display: none;
      }
-     .main-container .navbar .cart{
-    display: flex;
-    gap: 0.5px;
-    font-size: 10px;
-     margin-right: 80px;
-        
+     .main-container .navbar .right .cart a{
+        display: inline;
+      
+     }
+     
+
+     .main-container .navbar .right .cart a{
+      display: flex;
+      padding: 4px 8px;
+      gap: 8px;
+      height: 4vw;
+      width: 32vw;
+      font-size: 4vw;
+     margin-bottom: 14vw;
+     border-radius: 2vw;
+
+     }
+     .main-container .navbar .right i{
+        color: #FFF;
+        font-size: 4vw;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+     .main-container .navbar .cart  span{
+  display: hidden;
         
     }
     
@@ -67,30 +95,44 @@ height: 120px;
 
 }
 .main-container .navbar .right{
+    margin-right: 40px;
     display: flex;
     align-items: center; 
-    margin-right: 40px;
+    
 }
 
-.main-container .navbar .right li{
+
+.main-container .navbar .right {
     list-style: none;
+    
 }
-.main-container .navbar .right li a{
+.main-container .navbar .right  a{
     margin-right: 70px;
     color: white;
     text-decoration: none;
   
 }
-.main-container .navbar .right li a:hover{
+.main-container .navbar .right .cart a{
+    color: white;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+.main-container .navbar .right .cart a:hover{
+    color: white;
+}
+.main-container .navbar .right a:hover{
     color: orange;
     text-decoration: underline;
 }
-.main-container .navbar .cart {
+.main-container .navbar .cart a {
     gap: 15px;
     display: flex;
     background-color: orange;
     padding: 7px 20px;
     cursor: pointer;
+    
+}
+.main-container .navbar .cart{
     
 }
 
@@ -128,23 +170,28 @@ height: 120px;
 
 @media   (max-width:580px ){
     .description{
-        margin-left: 50px;
-        margin-top: 30px;
+        margin-left: 15px;
+       margin-top: -4vw;
+       padding-bottom: 10vw;
+       
     }
     .description h2{
-        font-size: 25px;
+        font-size: 4.5vw;
     }
     .description p{
-        font-size: 10px;
-        margin-top: 10px;
-        width: 200px;
+        font-size: 7px;
+        margin-top: 8px;
+        width: 35vw;
+        margin-bottom: 10px;
     }
     .description  h3 a{
         text-decoration: none;
         color: #FFF;
         border-radius: 5px;
-        width: 150px;
-        padding: 6px 10px;
+        width: 100px;
+        padding: 3px 8px;
+        margin-bottom: 10vw;
+        font-size: 15px;
     }
 }
 
@@ -162,7 +209,7 @@ height: 120px;
 .about-container{
     margin-top: -250px;  
     width: 1400px;
-    height: 1050px;
+    height: 1150px;
     position: absolute;
     background-color: #FFF;
     flex-direction: column;
@@ -198,13 +245,13 @@ height: 120px;
 @media  (max-width:580px ){
     .about-us{
         width: 100%;
-        height: 510px;
+        height: 570px;
     }
     .about-container{
         width: 320px;
         height: 550px;
         gap: 15px;
-        margin-top: -80px;
+        margin-top: -20px;
     }
     .about-container img{
         width: 290px;
@@ -227,7 +274,7 @@ height: 120px;
 /*Delivery---------------------------------------*/
 .delivery{
     background-image: url("assets/Rectangle\ 7.png");
-    height: 670px;
+    height: 770px;
 
 }
 .delivery-container{
@@ -378,7 +425,7 @@ gap: 100px;
     color: #FFF;
 }
 
-.numbers .num h1{
+.serve-container .numbers .num span{
    font-size:90px;
    color: orange;
    padding: 15px;
@@ -392,7 +439,7 @@ gap: 100px;
 
 @media  (max-width:580px ){
     .serve{
-        height: 440px;
+        height: 560px;
        
     }
     .serve-container{
@@ -422,38 +469,49 @@ gap: 100px;
     .numbers .num h3{
         font-size: 15px;
         font-weight: 600;
+        text-align: center;
     }
 
 }
 /*--------------------------------remember----------------------*/
 
-.remember{
-    height: 700px;
+.swiper {
+    width: 100%;
+    height: auto;
+    
+}
+.swiper-wrapper{
+    /* height: 700; */
     width: 100%;
    position: relative;
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
+   /* justify-content: center; */
    align-items: center;
+   text-align: center;
    margin-top: 100px;
    gap: 40px;
 }
-.remember h2{
+.swiper-wrapper h2{
 font-size: 30px;
 font-weight: 600px;
 }
-.remember h3 img{
+.swiper-wrapper h3 img{
     width: 60px;
     height: 40px;
 }
-.remember .paragraph{
+
+.swiper-wrapper .paragraph{
+   justify-content: center;
+    text-align: center;
+    inline-size: 500px;
     width: 1100px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     font-size: 18px;
 }
-.remember img{
+.swiper-wrapper img{
     width: 200px;
     height: 200px;
 }
@@ -678,7 +736,9 @@ color: #FFF;
     justify-content: space-evenly;
     gap: 450px;
 }
-
+.footer-sec .container i{
+    font-size: 24px;
+}
 .footer-sec .container2 {
    font-size: 53px;
    gap: 20px;
@@ -702,5 +762,4 @@ color: #FFF;
 }
 
 /*------------------------------------responsive query-----------------------------------------------*/
-
 

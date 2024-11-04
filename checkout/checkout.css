@@ -28,6 +28,8 @@ body,html{
     .main-container{
        width: auto;
         height: 280px;
+        background-image: url("assets/chicken.png");
+        background-size: cover;
         
     }
     .main-container  .navbar img{
@@ -39,14 +41,16 @@ body,html{
      .main-container .navbar .right li{
         display: none;
      }
-     .main-container .navbar .cart{
-    display: flex;
-    gap: 0.5px;
-    font-size: 10px;
-     margin-right: 80px;
-        
-        
-    }
+    
+    .main-container .navbar .right .cart{
+        display: flex;
+        padding: 4px 8px;
+        gap: 0vw;
+        height: 6vw;
+        width: 35vw;
+       border-radius: 2vw;
+       font-size:4vw;
+       }
     
 
 }

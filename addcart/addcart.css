@@ -40,6 +40,7 @@ body {
         height: 400px;
        
      }
+     
     .body{
         height: 695px;
        
@@ -95,7 +96,7 @@ body {
    
     margin-top: 10px;
 }
-.box .img .img2 img{
+.box .img .img2 a img {
     height: 30px;
     width: 30px;
     margin-right: 10px;
